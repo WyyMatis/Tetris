@@ -1,0 +1,20 @@
+{
+  "name": "projetProgweb",
+  "version": "1.0.0",
+  "description": "Projet",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "DM",
+  "license": "ISC",
+  "dependencies": {
+    "async-seq": "^0.2.9",
+    "chai": "^4.3.6",
+    "deep-equal-in-any-order": "^1.1.15",
+    "restify": "^8.6.1",
+    "restify-clients": "^3.1.0",
+    "spdy-transport": "^3.0.0"
+  }
+}

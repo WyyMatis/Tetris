@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-stretch: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+
+/* Partie gauche */
+.infos-joueur-score {
+    border-left: 8px solid #CDCEAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.case-info {
+    border: 6px solid #CDCEAE;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+}
+
+.double {
+    background: #CDCEAE;
+    width: 100%;
+    margin: 4px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 5px solid lightcoral;
+    border-radius: 8px;
+    background-color: lightcoral;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+audio{
+    display: none;
+}
+  
+
+.pause-sound {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#playPauseDiv.case-info {
+    opacity: initial;
+    width: 40%;
+}
+
+#playPauseDiv.case-info :hover {
+    background-color: black;
+    color: #CDCEAE;
+    cursor: pointer;
+}
+
+#playPauseText {
+    font-size: 40px;
+    margin: 0 0 0 20px;
+    margin-left: 0;
+    margin-top: -10px;
+    border: 0;
+}
+
+#sound-div {
+    display: flex;
+    width: 40%;
+    padding: 0;
+}
+
+#sound-div :hover {
+    background-color: black;
+    color: #CDCEAE;
+    cursor: pointer;
+}
+
+.soundButton {
+    background: #CDCEAE;
+    border: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.volume-icon {
+    width: 100%;
+    height: 100%;
+    zoom : 200%;
+    display: initial !important;
+}
+
+.case-info-meilleurs-scores {
+    border: 6px solid #CDCEAE;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    height: 50%;
+}
+
+#bestScores{
+    list-style-type: none;
+    text-align: left;
+    padding-left: 5px !important;
+    line-height: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+/* Milieu - zone de jeu */
+.ecran-jeu {
+    border-left: 5px solid #CDCEAE;
+    border-right: 5px solid #CDCEAE;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Partie droite */
+.zone-informations {
+    border-right: 5px solid #CDCEAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.case-info-piece-suivante {
+    border: 6px solid #CDCEAE;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    height: 30%;
+}
+
+#nextPiece {
+     display: flex;
+}

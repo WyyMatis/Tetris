@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>▚ TETRIS ▞</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-element.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+    <body>
+
+    <div class="infos-joueur-score">
+
+        <div class = "pause-sound">
+            <div class="case-info" id="playPauseDiv">
+                <div class="double">
+                    <h2 id="playPauseText">⏸</h2>
+                </div>
+            </div>
+
+            <div class="case-info" id="sound-div">
+                <audio id="audio"></audio>
+                <div class="double">
+                    <button class="soundButton" id="button">
+                        <i class="fa volume-icon fa-volume-off" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+  
+
+        <div class="case-info">
+            <div class="double">
+                <h2>JOUEUR</h2>
+                <ul id="myName"></ul><!--Afficher le nom du joueur-->
+            </div>
+        </div>
+
+        <div class="case-info-meilleurs-scores">
+            <div class="double">
+                <h2>CLASSEMENT</h2>
+                <ul id="bestScores"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ecran-jeu">
+
+            <canvas id="tetris" width="200px" height="400px">Your browser doesn't support canvas</canvas>
+
+    </div>
+
+    <div class="zone-informations">
+
+        <div class="case-info">
+            <div class="double">
+                <h2>SCORE</h2>
+                <ul id="myScore">0</ul><!--Afficher le score-->
+            </div>
+        </div>
+
+        <div class="case-info">
+            <div class="double">
+                <h2>NIVEAU</h2>
+                <ul id="levels">0</ul><!--Afficher le niveau-->
+            </div>
+        </div>
+
+        <div class="case-info">
+            <div class="double">
+                <h2>LIGNES</h2>
+                <ul id="lines">0</ul><!--Afficher le nombre de lignes-->
+            </div>
+        </div>
+
+        <div class="case-info-piece-suivante">
+            <div class="double">
+                <canvas id="nextPiece" width="150px" height="150px">Your browser doesn't support canvas</canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="conf.js"></script>
+    <script src="score.js"></script>
+    <script src="nextPiece.js"></script>
+    <script src="script.js"></script>
+    <script src="sounds.js"></script>
+
+
+    </body>
+</html>
